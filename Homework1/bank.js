@@ -176,23 +176,27 @@ function Welcome() {
 function Login() {
     let user = prompt("Username: ");
     let customer = userList.find(item => item.username === user);
-    alert(customer.id);
     if (userList.indexOf(customer) !== -1) {
+        alert(customer.id);
         //alert("Customer exists!");
         let guesses = 0
-        pass = prompt("Enter password: ");
+        pass = prompt("Enter your password: ");
         while (!customer.passwordCheck(pass) && guesses < 5) {
-            pass = prompt("Enter password: ");
+            pass = prompt("Enter your password (" + (5-guesses) + " more tries):");
             guesses++;
             if (guesses == 5) {
                 alert("You have guessed too many times.");
             }
+        }
+        if (guesses < 5) {
+            customer.loggedIn = true;
         }
     } else {
         alert("Customer does not exist!");
         customer = CreateNewCustomer();
     }
 
+    alert(customer.loggedIn);
     if (customer.loggedIn) {
         return customer;
     }
@@ -208,6 +212,10 @@ function CreateNewCustomer() {
 }
 
 function Options(op, user) {
+    if (typeof(user) == 'undefined'){
+        return true;
+    }
+    
     switch(op) {
         case '1':
             user.deposit();
@@ -256,9 +264,9 @@ let userList = [
     new Customer('user4', 'pass4'),
     new Customer('user5', 'pass5'),
 ];
-userList[2].loggedIn = true;
-userList[2].printInfo();
-alert(userList[2].username);
+//userList[2].loggedIn = true;
+//userList[2].printInfo();
+//alert(userList[2].username);
 
 /*
 let users = new Users();
