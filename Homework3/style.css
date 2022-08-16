@@ -268,3 +268,8 @@ p {
 .emailList_info {
     padding: 1rem;
 }
+
+.emailList_info_email {
+    opacity: 0.5;
+    font-size: 14px;
+}
