@@ -245,6 +245,7 @@ p {
 }
 
 .emailList_entry {
+    margin: 0px 10px;
     background-color: #fff;
     max-width: 450px;
     display: flex;
@@ -262,4 +263,8 @@ p {
     vertical-align: middle;
     background-color: #fff;
     border-radius: 50%;
+}
+
+.emailList_info {
+    padding: 15px;
 }
