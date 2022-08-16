@@ -162,10 +162,17 @@ p {
     border-radius: 10px;
     display: flex;
     padding: 10px;
+    margin: 1.5rem;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
 }
 
 .notification img {
-    size-adjust: 100px 100px;
+    width: 5rem;
+    height: 5rem;
+    max-width: 100%;
+    vertical-align: middle;
     background-color: #fff;
     border-radius: 15px;
 }
@@ -173,12 +180,87 @@ p {
 .notification_text {
     display: block;
     margin: 0;
-    padding: 0;
-    text-align: left;
     padding: 20px 30px;
 }
 
 .notification_text_title {
-    font-size: 35px;
-    font: bold;
+    font-size: 18px;
+    font: bolder;
+}
+
+.notification_text_message {
+    opacity: 0.5;
+    font-size: 14px;
+}
+
+.idTag {
+    background-color: #fff;
+    max-width: 450px;
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+    margin: 1.5rem;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+.idTag img {
+    width: 5rem;
+    height: 5rem;
+    max-width: 100%;
+    vertical-align: middle;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.idTag_info {
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding: 20px 30px;
+}
+
+.idTag_info_name {
+    font-size: 18px;
+    font: bolder;
+}
+
+.idTag_info_occupation {
+    opacity: 0.5;
+    font-size: 14px;
+}
+
+.idTag button {
+    border-radius: 15px;
+    background-color: darkviolet;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.idTag button:hover {
+    background-color: orange;
+}
+
+.emailList_entry {
+    background-color: #fff;
+    max-width: 450px;
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+    margin: 1.5rem;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+.emailList img {
+    width: 5rem;
+    height: 5rem;
+    max-width: 100%;
+    vertical-align: middle;
+    background-color: #fff;
+    border-radius: 50%;
 }
