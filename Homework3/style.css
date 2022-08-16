@@ -245,7 +245,7 @@ p {
 }
 
 .emailList_entry {
-    margin: 0px 10px;
+    margin: 0 3rem;
     background-color: #fff;
     max-width: 450px;
     display: flex;
@@ -253,7 +253,7 @@ p {
     text-align: left;
     justify-content: center;
     align-items: center;
-    border-top: #333;
+    border-top: 1px solid #e5e5e5;
 }
 
 .emailList img {
@@ -266,5 +266,5 @@ p {
 }
 
 .emailList_info {
-    padding: 15px;
+    padding: 1rem;
 }
